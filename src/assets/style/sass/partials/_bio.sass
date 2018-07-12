@@ -1,0 +1,22 @@
+#bio
+  color: #fff
+  margin-top: 15vh
+  background: lighten($mainColor, 10)
+
+  .flex-wrapper
+    margin: auto
+    width: $container
+    +flex
+    align-items: center
+
+    .bio-img
+      margin-top: $gutterWidth
+      width: 250px
+      border-radius: 50%
+      padding: $gutterWidth
+
+    .bio-text
+      text-align: center
+      +letter-spacing
+      font-size: 1.3rem
+      line-height: 1.5rem
