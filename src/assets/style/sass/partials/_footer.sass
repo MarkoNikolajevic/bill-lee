@@ -1,0 +1,42 @@
+.footer
+  background: $mainColor
+  +flex
+  align-items: center
+  justify-content: space-around
+  height: 10vh
+  .left-side-footer
+    color: #fff
+    +letter-spacing
+    font-size: 1rem
+  .center-footer
+    .social-link
+      color: #fff
+      text-decoration: none
+      font-size: 1.5rem
+      padding: 0 10px
+      .fa-youtube
+        +transition
+        &:hover
+          color: $youtubeColor
+      .fa-facebook-square
+        +transition
+        &:hover
+          color: $facebookColor
+      .fa-twitter-square
+        +transition
+        &:hover
+          color: $twitterColor
+      .fa-instagram
+        +transition
+        &:hover
+          color: $instagramColor
+  .right-side-footer
+    color: #fff
+    +letter-spacing
+    font-size: 1rem
+    .created-by
+      text-decoration: none
+      color: #fff
+      +transition
+      &:hover
+        color: $secondaryColor
