@@ -15,5 +15,24 @@
       +letter-spacing
       font-size: 1.25rem
       padding: 0 1rem
+      margin: 0 1rem
       vertical-align: text-top
       +transition
+    .bottom-border
+      transform: perspective(1px) translateZ(0)
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+      position: relative
+      overflow: hidden
+      &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        left: 51%
+        right: 51%
+        bottom: 0
+        background: #fff
+        height: 2px
+        +transition
+    .bottom-border:hover:before
+      left: 0
+      right: 0
