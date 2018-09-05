@@ -1,7 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-	setTimeout(function() {
-		const logo = document.querySelector('.jumbotron-logo');
-		logo.classList.remove('hidden');
-		logo.classList.add('fadeIn');
-	}, 1000);
+const caret = document.querySelector('.caret-down');
+const header = document.querySelector('.main-header');
+
+header.addEventListener('mouseover', function() {
+	caret.classList.add('translate');
+	header.addEventListener('mouseleave', function() {
+		caret.classList.remove('translate');
+	});
 });
