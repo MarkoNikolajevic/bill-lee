@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px)
+  .nav-link-container
+    display: flex !important
+  .hamburger-menu
+    display: none
+  .video-wrapper
+    grid-template-columns: repeat(2, 1fr)
+    .video2
+      grid-column: span 2
+      grid-row: span 2
+      align-self: stretch
+      justify-self: stretch
+  .foto-banner
+    grid-template-columns: repeat(3, 1fr)
+
+@media screen and (min-width: 1024px)
+  .video-wrapper
+    width: $tabletContainer
+    margin: auto !important
+    padding: $gutterWidth 0 !important
+    grid-gap: $gutterWidth !important
+  .flex-wrapper
+    width: $tabletContainer !important
+    flex-direction: row !important
+  .footer
+    flex-direction: row !important
+    justify-content: space-around !important
+
+@media screen and (min-width: 1200px)
+  .video-wrapper
+    width: $container
+    grid-template-columns: repeat(4, 1fr) !important
+    .video1
+      grid-column: span 1 !important
+    .video2
+      grid-column: span 2 !important
+      order: 0 !important
+    .video3
+      grid-column: span 1 !important
+    .video4
+      grid-column: span 1 !important
+    .video5
+      grid-column: span 1 !important
+
+  .flex-wrapper
+    width: $container !important
