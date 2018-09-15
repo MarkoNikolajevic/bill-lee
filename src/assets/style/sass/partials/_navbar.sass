@@ -74,9 +74,9 @@
     text-transform: uppercase
     padding: 1rem
     border-bottom: 2px solid $secondaryColor
-
-.hidden-on-large
-  display: none
+    +transition
+    &:hover
+      background: $secondaryColor
 
 .display-none
   display: none
