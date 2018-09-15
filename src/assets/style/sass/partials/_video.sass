@@ -1,25 +1,12 @@
 #video
   background: $mainColor
   .video-wrapper
-    width: $container
-    margin: auto
-    padding: $gutterWidth 0
-    iframe
-      border: none
-    .video1
-      grid-column: span 1
-    .video2
-      grid-column: span 2
-      grid-row: span 2
-      align-self: stretch
-      justify-self: stretch
-    .video3
-      grid-column: span 1
-    .video4
-      grid-column: span 1
-    .video5
-      grid-column: span 1
-
+    margin: 0
+    padding: $gutterWidth
     display: grid
     grid-gap: $gutterWidth
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: 1fr
+    iframe
+      border: none
+    .video2
+      order: -1

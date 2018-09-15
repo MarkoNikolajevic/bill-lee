@@ -1,20 +1,21 @@
 #bio
-  padding: (2 * $gutterWidth) 0
   color: #fff
+  padding: (2 * $gutterWidth) 0
   background: linear-gradient(115.90808106542045deg, rgba(0, 0, 0,1) 18.28515625%,rgba(130, 130, 130,1) 84.06640625%)
   .flex-wrapper
     margin: auto
-    width: $container
+    width: $mobileContainer
     +flex
+    justify-content: center
     align-items: center
-
+    flex-direction: column
     .bio-img
       width: 250px
       border-radius: 50%
       padding: $gutterWidth
-
     .bio-text
       text-align: center
       +letter-spacing
-      font-size: 1.3rem
-      line-height: 1.5rem
+      font-size: 1rem
+      line-height: 1.2rem
+      padding: $gutterWidth
